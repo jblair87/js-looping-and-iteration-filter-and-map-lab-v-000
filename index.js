@@ -16,6 +16,7 @@ function exactMatch(driver, matchers){
     matches = driver[key] === matcher[key];
    }
  return matches;  
+});
 }
 
 function exactMatchToList(driver, matchers){
