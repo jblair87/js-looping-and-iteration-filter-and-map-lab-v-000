@@ -1,4 +1,4 @@
-function driversWithRevenueOver(drivers){
+function driversWithRevenueOver(list){
   return drivers.filter(function(el)  {
   return el.toLowerCase().indexOf(query.toLowerCase()) > -1;
   })
