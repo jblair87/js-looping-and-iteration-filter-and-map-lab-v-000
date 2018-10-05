@@ -9,7 +9,7 @@ function driverNamesWithRevenueOver(drivers, revenue){
  return driver.name;  
   });
 }
-function exactMatch(driver, matchers){
+function exactMatch(driver, matcher){
    return drivers.filter(function(driver){
      let matches = false;
      for(const key in matcher){
@@ -19,8 +19,8 @@ function exactMatch(driver, matchers){
 });
 }
 
-function exactMatchToList(driver, matchers){
-    return exactMatch(drivers, matchers)
+function exactMatchToList(driver, matcher){
+    return exactMatch(drivers, matcher)
   .map(function(driver) {
  return driver.name;  
   });
